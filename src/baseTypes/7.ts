@@ -8,10 +8,11 @@ const currentDay = DayOfWeek.Saturday;
 //const currentDay = DayOfWeek.Monday;
 
 function isWeekend(day: DayOfWeek): boolean {
- if (day === DayOfWeek.Saturday || day === DayOfWeek.Sunday ) {
-  return true
- }
- else  return false;
+//  if (day === DayOfWeek.Saturday || day === DayOfWeek.Sunday ) {
+//   return true
+//  }
+//  else  return false;
+return (day === DayOfWeek.Saturday || day === DayOfWeek.Sunday);
 }
 
 const currentDayIs = isWeekend(currentDay) ? 'Current day is day off' : 'Current day is working';
